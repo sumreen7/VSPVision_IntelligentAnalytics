@@ -49,22 +49,26 @@ The goal: replace intuition-driven assortment decisions with a repeatable, leaka
 vsp-frame-assortment/
 │
 ├── data/
-│   ├── final_demand.csv           # SKU × Region × 12 monthly sales columns
-│   └── detailed_attributes.csv   # Style-level product attributes
-│
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb    # Merging, cleaning, wide → long reshape
-│   ├── 02_eda.ipynb              # Exploratory analysis, shape/price/brand breakdowns
-│   └── 03_xgboost_model.ipynb   # Feature engineering, model training, evaluation
-│
-├── outputs/
-│   ├── vsp_report.html           # Full interactive HTML analysis report
-│   └── action_items.docx         # 14 prioritized PM action items with data justification
+│   ├── detailed_attributes.csv        # Style-level product attributes
+│   └── final_demand.csv               # SKU × Region × 12 monthly sales columns
 │
 ├── docs/
-│   └── methodology.md            # Full methodology write-up
+│   ├── Final Report VSP.pdf           # Final written report
+│   ├── VSP Presentation.pdf           # Slide deck presentation
+│   └── methodology.md                 # Methodology write-up
 │
-├── portfolio.html                 # Standalone portfolio case study page
+├── notebooks/
+│   ├── Demand_and_Cluster_Prediction.ipynb   # Demand forecasting + clustering
+│   ├── Descriptive-analytics.ipynb           # Exploratory data analysis
+│   ├── Enriched_demand.ipynb                 # Data enrichment + feature prep
+│   └── VSP_XGboost_finetuned.ipynb           # Final tuned XGBoost model
+│
+├── outputs/
+│   ├── VSP_Report_Updated.html        # Updated interactive HTML report
+│   ├── vsp_report.html                # Original HTML report
+│   └── action_items.docx              # Prioritized PM action plan
+│
+├── index.html                         # Portfolio landing page
 ├── requirements.txt
 ├── .gitignore
 └── README.md
