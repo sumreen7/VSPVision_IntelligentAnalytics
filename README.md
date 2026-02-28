@@ -18,7 +18,7 @@ The goal: replace intuition-driven assortment decisions with a repeatable, leaka
 | Metric | Value |
 |---|---|
 | Model | XGBoost (Tuned) |
-| R² — Log Scale *(primary)* | **0.695** |
+| R² — Log Scale *(primary)* | **0.737** |
 | R² — Raw Units | 0.542 |
 | Cross-Validated R² | 0.738 |
 | MAE | 26.4 units / month |
@@ -98,7 +98,7 @@ Female-labeled SKUs account for just 15.8% of sales despite having identical per
 | Linear Regression | 0.310 | −18.0 | 55.6 |
 | Random Forest | 0.520 | 0.514 | 26.9 |
 | XGBoost (baseline) | 0.580 | 0.523 | 26.9 |
-| **XGBoost (tuned)** | **0.695** | **0.542** | **26.4** |
+| **XGBoost (tuned)** | **0.737** | **0.542** | **26.4** |
 
 Tuned via `RandomizedSearchCV` across 40 combinations, 3-fold CV.  
 Best params: `n_estimators=800, max_depth=4, learning_rate=0.01, subsample=0.7, reg_lambda=3`
