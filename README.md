@@ -3,7 +3,7 @@
 > Demand forecasting + product management analysis for Visionworks eyewear retail  
 > **XGBoost · Python · 162 SKUs · 3 Brands · 2 Regions · Sep 2023–Aug 2024**
 
----
+
 
 **View the full HTML analysis report here**:
 
